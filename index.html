@@ -6,22 +6,19 @@
     <title>Blue</title>
     <style>
         body {
-            background-color: blue;
-        }
-        
-
-        h1 {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1E3A8A; /* Deep blue for contrast */
             color: white;
-
+            text-align: center;
         }
 
-        h2 {
+        h1, h2 {
             color: white;
         }
 
         .navbar {
             display: flex;
-            background-color: #333;
             overflow: hidden;
         }
 
@@ -30,17 +27,43 @@
             padding: 14px 20px;
             text-align: center;
             text-decoration: none;
+            font-weight: bold;
             color: white;
-            transition: background-color 0.3s;
+            transition: transform 0.2s, filter 0.2s;
         }
 
         .navbar a:hover {
-            background-color: #575757;
+            transform: scale(1.05);
+            filter: brightness(1.2);
         }
 
+        /* Rainbow navbar colors */
+        .navbar a:nth-child(1) { background-color: #666; }
+        .navbar a:nth-child(2) { background-color: #FF4136; }
+        .navbar a:nth-child(3) { background-color: #FF851B; }
+        .navbar a:nth-child(4) {
+            background-color: #FFDC00;
+            color: #000;
+        }
+        .navbar a:nth-child(5) { background-color: #2ECC40; }
+        .navbar a:nth-child(6) { background-color: #0074D9; }
+        .navbar a:nth-child(7) { background-color: #B10DC9; }
+
+        .content {
+            padding: 30px;
+        }
+
+        img {
+            max-width: 300px;
+            margin: 20px;
+            border: 4px solid white;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+        }
     </style>
 </head>
-    <body>
+
+<body>
 
     <div class="navbar">
         <a href="https://drewdahdude11.github.io/Rainbow.home/">Home</a>
@@ -51,8 +74,17 @@
         <a href="https://drewdahdude11.github.io/Rainbow.blue/">Blue</a>
         <a href="https://drewdahdude11.github.io/Rainbow.purple/">Purple</a>
     </div>
-    
-    <img src="https://th.bing.com/th/id/R.fb4b56ef9793723dbae1b985ed898cbb?rik=tH4fyvK7jgOhow&riu=http%3a%2f%2fclipart-library.com%2fnewhp%2f78-783809_blueberries-smoothie-3-blueberry-clipart.png&ehk=NBvoGrI9F2nyP9dIsxCg8PdaSqeGfHIeVlXrr1cPgU8%3d&risl=&pid=ImgRaw&r=0">
-    
-    </body>
+
+    <div class="content">
+        <h1>Welcome to the Blue Page!</h1>
+        <h2>Blue is the color of calm, wisdom, and the open sky.</h2>
+
+        <!-- Blue-Themed Images -->
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Ocean">
+        <img src="https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?auto=format&fit=crop&w=600&q=80" alt="Blue Sky">
+        <img src="https://images.unsplash.com/photo-1587815073193-cb4ef21c933e?auto=format&fit=crop&w=600&q=80" alt="Blueberries">
+    </div>
+
+</body>
+
 </html>
